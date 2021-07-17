@@ -1,0 +1,58 @@
+#component {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: #000;
+  padding: 15px;
+}
+
+input {
+  appearance: none;
+  border: solid 1px #999;
+  border-radius: 0.35rem;
+  padding: 0.5rem 0.75rem;
+  outline: none;
+
+  &:focus {
+    outline: none;
+    border-color: #5e9ee2;
+    box-shadow: 0 0 0 3px #3c99ff80;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 0.5em;
+  }
+
+  label {
+    margin-bottom: 0.25em;
+  }
+}
+
+ul {
+  margin: 0.5em 0 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    color: #000;
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    background-color: #cecece;
+    border-radius: 0.35rem;
+    border: solid 1px #555;
+    box-shadow: 1px 2px 3px #00000040;
+    transition: background 500ms ease;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+
+  > :not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}

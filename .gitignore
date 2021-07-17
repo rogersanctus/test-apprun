@@ -1,0 +1,10 @@
+/node_modules/
+.env
+.env.*
+/.vscode/
+!public/
+public/*
+!public/assets
+!public/*.html
+!public/*.css
+!public/*.ico

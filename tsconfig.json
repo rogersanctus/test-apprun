@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ESNEXT",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "reactNamespace": "app",
+        "lib": ["ESNext", "DOM", "ScriptHost", "ES2021"],
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "esModuleInterop": true,
+        "paths": {
+            "@/": ["./src/*"]
+        }
+    },
+    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.css", "src/**/*.scss"],
+    "exclude": [
+        "node_modules",
+        "public",
+        "tests/**/*.test.tsx"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "teste-apprun",
+  "version": "1.0.0",
+  "description": "Simple AppRun test application",
+  "main": "index.tsx",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run start:*\"",
+    "start:rollup": "rollup -c -w",
+    "start:server": "live-server public --mount=/src:./src --no-browser",
+    "build": "rollup -c --environment NODE_ENV:production"
+  },
+  "author": "rogersanctus@gmail.com",
+  "license": "ISC",
+  "repository": "http://github.com/rogersanctus/teste-apprun",
+  "dependencies": {
+    "apprun": "^3.28.6"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "concurrently": "^6.2.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.5",
+    "postcss-import": "^14.0.2",
+    "prettier": "^2.3.2",
+    "rollup": "^2.53.1",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  }
+}
